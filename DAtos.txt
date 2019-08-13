@@ -1,0 +1,48 @@
+USE BD_Guimer3
+GO
+
+INSERT [dbo].[UNIVERSIDAD] ([id_uni],[nombre_uni],[direccion_uni],[telefono_uni],[email_uni],[web_uni],[ruc_uni]) VALUES (N'1', N'UNIVERSISIDAD PRIVADA DE TACNA', N'Capanique SN', N'052457874',N'Upt@gmail.com',N'WWw.Upt.edu.pe',N'01547854')
+
+INSERT [dbo].[FACULTDAD] ([id_facu],[iniciales_facu],[nombre_facu],[id_uni]) VALUES (N'1',N'Faing',N'Facultdad de Ingenieria', N'1')
+INSERT [dbo].[FACULTDAD] ([id_facu],[iniciales_facu],[nombre_facu],[id_uni]) VALUES (N'2',N'Facen',N'Facultad de Ciencias Empresariales', N'1')
+INSERT [dbo].[FACULTDAD] ([id_facu],[iniciales_facu],[nombre_facu],[id_uni]) VALUES (N'3',N'Fade',N'Facultad de Derecho', N'1')
+
+
+
+INSERT [dbo].[ESCUELA] ([id_escu],[id_facu],[iniciales_escu],[nombre_escu]) VALUES (N'1',N'1',N'Epis',N'Escuela de Ingenieria de Sistemas')
+INSERT [dbo].[ESCUELA] ([id_escu],[id_facu],[iniciales_escu],[nombre_escu]) VALUES (N'2',N'1',N'Epic',N'Escuela de Electronica')
+INSERT [dbo].[ESCUELA] ([id_escu],[id_facu],[iniciales_escu],[nombre_escu]) VALUES (N'3',N'2',N'Efe',N'Escuela de funciones Empresariales')
+INSERT [dbo].[ESCUELA] ([id_escu],[id_facu],[iniciales_escu],[nombre_escu]) VALUES (N'4',N'2',N'Efac',N'Escuela de Fisica Analitica Contable')
+INSERT [dbo].[ESCUELA] ([id_escu],[id_facu],[iniciales_escu],[nombre_escu]) VALUES (N'5',N'3',N'Edeu',N'Escuela de Derechos Humanos')
+
+
+
+INSERT [dbo].[MODALIDAD] ([id_mod],[modalidad_mod],[descripcion_mod]) VALUES (N'1', N'Examen Ordinario',N'el examen es para cualquier persona')
+INSERT [dbo].[MODALIDAD] ([id_mod],[modalidad_mod],[descripcion_mod]) VALUES (N'2', N'Examen Extraordinario',N'el examen es para Estudiantes')
+
+
+INSERT [dbo].[CONVOCATORIA] ([id_convo],[año_convo],[observacion_convo]) VALUES (N'1', N'2019-1',N'de verano')
+INSERT [dbo].[CONVOCATORIA] ([id_convo],[año_convo],[observacion_convo]) VALUES (N'2', N'2019-2',N'de invieno')
+
+
+
+INSERT [dbo].[UBICACION] ([id_ubi],[lugar_ubi],[direccion_ubi],[referencia_ubi]) VALUES (N'1', N'Casino Royal',N'cavenida centrar',N'donde hay muchos viciosos')
+INSERT [dbo].[UBICACION] ([id_ubi],[lugar_ubi],[direccion_ubi],[referencia_ubi]) VALUES (N'2', N'Casa Andina',N'pocollay',N'por el cerro intiorko')
+
+
+
+INSERT [dbo].[CARGO] ([id_cargo],[nombre_cargo]) VALUES (N'1', N'Organizador')
+INSERT [dbo].[CARGO] ([id_cargo],[nombre_cargo]) VALUES (N'2', N'Animador')
+
+
+INSERT [dbo].[RESPONSABLE] ([id_respo],[nombre_respo],[apellido_respo],[id_cargo]) VALUES (N'1',N'Alejadnro',N'Arjona',N'1')
+INSERT [dbo].[RESPONSABLE] ([id_respo],[nombre_respo],[apellido_respo],[id_cargo]) VALUES (N'2', N'Sebastian',N'Isarsaburo',N'2')
+
+INSERT [dbo].[USUARIO] ([codigo_usu],[dni_usu],[nombre_usu],[apellidos_usu],[sexo_usu],[fechanaci_usu],[direccion_usu],[telefono_usu],[email_usu],[usuario_usu],[clave_usu],[estado_usu]) VALUES (N'1',N'11111',N'Guimer',N'Coaquira',N'hombre',N'28/03/1989',N'casa leguia',N'952787458',N'jcarlossenati@gmail.com',N'administrador',N'1111',N'Activo')
+
+
+
+--INSERT [dbo].[ESTUDIANTE] ([codigo_estu],[dni_estu],[nombre_estu],[apellidos_estu],[sexo_estu],[fechanaci_estu],[direccion_estu],[telefono_estu],[email_estu],[id_facu],[id_escu],[id_convo],[id_mod]) VALUES (N'1',N'44518825',N'nombres',N'Apellidos',N'hombre',N'28/03/1989',N'casa leguia',N'952787458',N'jcarlossenati@gmail.com',N'1',N'1',N'1',N'1')
+--INSERT [dbo].[ESTUDIANTE] ([codigo_estu],[dni_estu],[nombre_estu],[apellidos_estu],[sexo_estu],[fechanaci_estu],[direccion_estu],[telefono_estu],[email_estu],[id_facu],[id_escu],[id_convo],[id_mod]) VALUES (N'2',N'44518825',N'JUAN CARLOS',N'Panty',N'hombre',N'28/03/1989',N'casa leguia',N'952787458',N'jcarlossenati@gmail.com',N'1',N'2',N'1',N'1')
+--INSERT [dbo].[ESTUDIANTE] ([codigo_estu],[dni_estu],[nombre_estu],[apellidos_estu],[sexo_estu],[fechanaci_estu],[direccion_estu],[telefono_estu],[email_estu],[id_facu],[id_escu],[id_convo],[id_mod]) VALUES (N'3',N'44518825',N'Guimer',N'Coaquira',N'hombre',N'28/03/1989',N'casa leguia',N'952787458',N'jcarlossenati@gmail.com',N'2',N'1',N'1',N'1')
+
